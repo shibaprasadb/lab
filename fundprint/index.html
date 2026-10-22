@@ -25,6 +25,50 @@
        (umami.js, loaded by feedback.js), so no script is loaded from another site. gateway.umami.is receives the counts. -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval' blob: data:; worker-src 'self' blob: data:; connect-src 'self' blob: data: https://gateway.umami.is; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
   <link rel="stylesheet" href="./vendor/stlite/stlite.css">
+  <!-- So the app still works if the network drops after the page has loaded (spec 008) -->
+  <link rel="modulepreload" href="./vendor/stlite/Autocomplete-yBl0QZl8-hXjNvyFc.js">
+  <link rel="modulepreload" href="./vendor/stlite/Cancel.esm-kUhZGiEF-gkmGkFMb.js">
+  <link rel="modulepreload" href="./vendor/stlite/DownloadButton-DZpqWH3K-Ba3qQE-z.js">
+  <link rel="modulepreload" href="./vendor/stlite/ErrorOutline.esm-Yy8EHZG_-5ZFjuy4b.js">
+  <link rel="modulepreload" href="./vendor/stlite/FileUploader-B-JkvkpN-DWtufrv2.js">
+  <link rel="modulepreload" href="./vendor/stlite/ImageList-BiQr6OtG-D3oGaD3c.js">
+  <link rel="modulepreload" href="./vendor/stlite/Input-BfPr4K7r-ry_u1GYX.js">
+  <link rel="modulepreload" href="./vendor/stlite/InputInstructions-C_Cl1-k3-CIkl0h2d.js">
+  <link rel="modulepreload" href="./vendor/stlite/PageLink-BtdyqyFw-ba2WL4e9.js">
+  <link rel="modulepreload" href="./vendor/stlite/Radio-LxDCVSNh-Cm0e6nUb.js">
+  <link rel="modulepreload" href="./vendor/stlite/Spinner-DHisVpjF-DsgsSgP7.js">
+  <link rel="modulepreload" href="./vendor/stlite/StreamlitSyntaxHighlighter-CummDLj7-B97DLCsg.js">
+  <link rel="modulepreload" href="./vendor/stlite/TableChart.esm-BuW4OiHR-BSdKotM_.js">
+  <link rel="modulepreload" href="./vendor/stlite/TextField-DiJ-XhOU-Do2OmlTW.js">
+  <link rel="modulepreload" href="./vendor/stlite/TextInput-dPTdIBJQ-DoloAT-p.js">
+  <link rel="modulepreload" href="./vendor/stlite/UploadFileInfo-DdcsXhjv-C0F82PE-.js">
+  <link rel="modulepreload" href="./vendor/stlite/WidgetLabel-U-mKNEwU-C4z5Ludx.js">
+  <link rel="modulepreload" href="./vendor/stlite/WidgetLabelHelpIcon-CJdsYKmr-RUb75lkT.js">
+  <link rel="modulepreload" href="./vendor/stlite/WidgetLabelHelpIconInline-m-cQzzRi-CckoYspA.js">
+  <link rel="modulepreload" href="./vendor/stlite/createDownloadLinkElement-C-yKUb7r-Bb9j4q0P.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-2iFY0OrW-BnPuaWGT.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-CMr9m75A-DF3Nah4J.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-DEOVSfHq-DGKXwrUO.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-DJ56Baoq-CaouAiw8.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-DWSBvS3p-BJniG6dL.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-DWSBvS3p-COwApX4q.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-Df-1Z3LJ-BbKzDPIK.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-DqqVGYCD-Dk2VCZX4.js">
+  <link rel="modulepreload" href="./vendor/stlite/index-OP7Y84q5-1cfwtvMM.js">
+  <link rel="modulepreload" href="./vendor/stlite/inputUtils-DCYiajnz-DpM8zsby.js">
+  <link rel="modulepreload" href="./vendor/stlite/styled-components-DUN7Fbs3-9EOBagZ-.js">
+  <link rel="modulepreload" href="./vendor/stlite/unzip-BxI14YsY-DcrTpKg-.js">
+  <link rel="modulepreload" href="./vendor/stlite/useBasicWidgetState-BKohZCUv-CU5RNQP0.js">
+  <link rel="modulepreload" href="./vendor/stlite/useDebouncedCallback-C3wEGvUR-DopHK1Ux.js">
+  <link rel="modulepreload" href="./vendor/stlite/useField-D1fIROlJ-CmELDa2D.js">
+  <link rel="modulepreload" href="./vendor/stlite/useFormReset-YBB8mYmk-BgnZIeew.js">
+  <link rel="modulepreload" href="./vendor/stlite/useFormValidation-C9F-maHa-OS_D_SMy.js">
+  <link rel="modulepreload" href="./vendor/stlite/useSlot-NJjPUpFV-BHnuYpPj.js">
+  <link rel="modulepreload" href="./vendor/stlite/useTextField-CRF6f00r-Db7G00v2.js">
+  <link rel="modulepreload" href="./vendor/stlite/useUpdateUiValue-ZdmBkK5u-ClZVNaiq.js">
+  <link rel="modulepreload" href="./vendor/stlite/utils-DK5Anh-1-Ds-Q7JKj.js">
+  <link rel="modulepreload" href="./vendor/stlite/withFullScreenWrapper-BQFbDfMA-B1QQU6SF.js">
+  <link rel="modulepreload" href="./vendor/stlite/zip-5Nrstxg2-CAp0MeBC.js">
   <style>
     #loading-note { position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); z-index: 1000000;
                     display: flex; align-items: center; gap: 0.75rem; max-width: calc(100vw - 2rem);
@@ -34,6 +78,10 @@
                              border: 2px solid #D5D6DB; border-top-color: #31333F;
                              animation: loading-spin 0.8s linear infinite; }
     @keyframes loading-spin { to { transform: rotate(360deg); } }
+    /* Shown by boot.js when start-up is slow or fails (spec 010) */
+    #loading-note button { flex: none; padding: 0.35rem 0.9rem; border: 0; border-radius: 0.4rem;
+                           background: #002147; color: #FFFFFF; font: 600 0.9rem system-ui, sans-serif; cursor: pointer; }
+    #loading-note button:hover, #loading-note button:focus-visible { background: #0A3A70; }
     /* Sits to the left of Streamlit's own top-right menu so it never covers it */
     #feedback-link { position: fixed; top: 0.7rem; right: 4.5rem; z-index: 999990;
                      padding: 0.3rem 0.85rem; border-radius: 999px; background: #002147; color: #FFFFFF;
